@@ -1,0 +1,149 @@
+.queue-container {
+    width: 100%;
+    height: 35%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #3e61d2;
+    opacity: 1;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #3e61d2 40px
+      ),
+      repeating-linear-gradient(#4767d055, #4767d0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .queue {
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .upNext {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin: 10px 0px;
+    
+  }
+  
+  .queue-list {
+    height: 80%;
+    width: 100%;
+
+    overflow-y: auto;
+  }
+  
+  .queue-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .queue-item {
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .queue-item:hover {
+    transform: scale(0.95);
+  }
+  
+  .queue-item p {
+    margin: 0px;
+  }
+  
+  .track-name {
+    
+    text-overflow: ellipsis;
+  }
+  @media (max-width: 768px) {
+    .queue-container {
+      height: 25%; /* Adjust height */
+      border-radius: 20px; /* Smaller border radius */
+    }
+  
+    .queue {
+      height: 90%; /* Adjust height */
+      width: 90%; /* Adjust width */
+    }
+  
+    .upNext {
+      font-size: 16px; /* Adjust font size */
+      margin: 8px 0px; /* Adjust margin */
+    }
+  
+    .queue-list {
+      height: 75%; /* Adjust height */
+    }
+  
+    .queue-item {
+      font-size: 12px; /* Adjust font size */
+      padding: 3px 0px; /* Adjust padding */
+    }
+  }
+  
+  /* For larger screens, you can define other breakpoints and adjust styles accordingly */
+  @media (min-width: 1024px) {
+    /* Additional styles for larger screens */
+  }
+  @media (max-width: 768px) {
+    .queue-container {
+      height: 25%; /* Adjust height */
+      border-radius: 20px; /* Smaller border radius */
+    }
+  
+    .queue {
+      height: 90%; /* Adjust height */
+      width: 90%; /* Adjust width */
+    }
+  
+    .upNext {
+      font-size: 16px; /* Adjust font size */
+      margin: 8px 0px; /* Adjust margin */
+    }
+  
+    .queue-list {
+      height: 75%; /* Adjust height */
+    }
+  
+    .queue-item {
+      font-size: 12px; /* Adjust font size */
+      padding: 3px 0px; /* Adjust padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .queue-container {
+      height: 20%; /* Adjust height */
+      border-radius: 15px; /* Smaller border radius */
+    }
+  
+    .queue {
+      height: 85%; /* Adjust height */
+      width: 95%; /* Adjust width */
+    }
+  
+    .upNext {
+      font-size: 14px; /* Adjust font size */
+      margin: 6px 0px; /* Adjust margin */
+    }
+  
+    .queue-list {
+      height: 70%; /* Adjust height */
+    }
+  
+    .queue-item {
+      font-size: 10px; /* Adjust font size */
+      padding: 2px 0px; /* Adjust padding */
+    }
+  }

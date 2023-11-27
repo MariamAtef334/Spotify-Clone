@@ -1,0 +1,62 @@
+circle {
+    transition: all 1s ease-in-out;
+    transform: rotate(93deg);
+    transform-origin: 50% 50%;
+  }
+  
+  image.active {
+    animation: rotation 30s infinite linear;
+    transform-origin: 50% 50%;
+  }
+  
+  .progress-circle {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .circle {
+      /* Example: Reduce size for smaller screens */
+      width: 80px;
+      height: 80px;
+    }
+  
+    .progress-circle {
+      /* Example: Adjust padding or margins for smaller screens */
+      padding: 20px;
+    }
+  }
+  
+  /* Adjust styles for larger screens */
+  @media screen and (min-width: 1200px) {
+    .circle {
+      /* Example: Increase size for larger screens */
+      width: 120px;
+      height: 120px;
+    }
+  
+    .progress-circle {
+      /* Example: Adjust padding or margins for larger screens */
+      padding: 40px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .circle {
+      /* Adjust size for screens up to 480px wide */
+      width: 40px;
+      height: 40px;
+    }
+  
+    .progress-circle {
+      /* Adjust padding or margins for smaller screens */
+      padding: 10px;
+    }
+  }

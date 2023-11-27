@@ -1,0 +1,46 @@
+.screen-container {
+  width: calc(100% - 100px);
+  height: 100%;
+  background-color: #1e2a3e;
+  border-radius: 30px;
+  background-color: #1e2a3e;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at center left,
+      transparent 0,
+      #233656 100px
+    ),
+    repeating-linear-gradient(#1e2a3e55, #1e2a3e);
+    
+}
+
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .screen-container {
+    width: calc(100% - 50px); /* Adjust width for smaller screens */
+    border-radius: 20px; /* Smaller border radius */
+    /* Other style adjustments as needed */
+  }
+  
+  /* Example: Change flex direction for smaller screens */
+  .flex {
+    flex-direction: column; /* Change flex direction to column */
+    /* Other style adjustments for flex container */
+  }
+}
+
+/* Media query for screens up to 480px */
+@media screen and (max-width: 480px) {
+  .screen-container {
+    width: calc(100% - 20px); /* Adjust width for even smaller screens */
+    border-radius: 10px; /* Further reduced border radius */
+    /* Other style adjustments as needed */
+  }
+  
+  /* Example: Further adjustments for flex layout at smaller screens */
+  .flex {
+    /* Additional adjustments for flex container at smaller screens */
+  }
+}

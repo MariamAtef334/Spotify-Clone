@@ -1,0 +1,42 @@
+.albumImage{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.albumImage img{
+    border-radius: 30px;
+    width:100% ;
+    aspect-ratio: 1;
+}
+.albumImage-shadow{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+width: 90%;
+position: absolute;
+z-index: -1;
+top: 18px;
+right: 0px;
+
+}
+@media screen and (max-width: 768px) {
+    .albumImage {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+
+    .albumImage-shadow {
+        width: 100%; /* Adjusted width for smaller screens */
+    }
+}
+
+/* Media Query for screens up to 480px */
+@media screen and (max-width: 480px) {
+    .albumImage {
+        width: 95%; /* Further adjusted width for 480px width */
+    }
+
+    .albumImage-shadow {
+        width: 100%; /* Further adjusted width for 480px width */
+    }
+}

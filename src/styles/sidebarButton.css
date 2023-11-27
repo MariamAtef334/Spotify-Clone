@@ -1,0 +1,71 @@
+a{
+    text-decoration: none;
+
+}
+.btn-body{
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    color: #F8D9C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: rgb(244, 187, 146.1,0.0) ;;
+}
+.btn-body.active{
+    color: #fff;
+    background-color:rgb(244, 187, 146.1) ;
+    transform: scale(1.05);
+}
+.btn-body:hover{
+color: #fff;
+}
+.btn-title{
+    margin: 4px auto;
+    font-weight: 600px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .btn-body {
+      height: 60px;
+      width: 60px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+    .btn-title {
+      font-size: 12px;
+      margin: 2px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-body {
+      height: 50px;
+      width: 50px;
+      border-radius: 12px;
+      font-size: 10px;
+      margin: 3px auto;
+    }
+    .btn-title {
+      font-size: 10px;
+      margin: 2px auto;
+    }
+  }
+  
+  /* Medium-sized screens (tablets) 769px to 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .btn-body {
+      height: 70px;
+      width: 70px;
+      border-radius: 18px;
+      font-size: 14px;
+      margin: 5px auto;
+    }
+    .btn-title {
+      font-size: 14px;
+      margin: 3px auto;
+    }
+  }

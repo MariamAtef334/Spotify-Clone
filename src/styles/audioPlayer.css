@@ -1,0 +1,93 @@
+.player-body{
+    width: 100%;
+    height: 44%;
+    margin: 3% 0%;
+}
+.player-left-body{
+    width: 37%;
+}
+.player-right-body{
+width: 63%;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.song-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+    color: #C4D0E3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.song-artist{
+   color: #9AA9C2; 
+   font-size: 14px;
+   font-weight: 500;
+}
+.player-right-bottom{
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.song-duration{
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.duration {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+
+    color: #c4d0e3;
+  }
+  @media (max-width: 768px) {
+    .player-body {
+        height: auto; /* Adjust height automatically */
+    }
+
+    .player-left-body,
+    .player-right-body {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .song-title {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+@media (max-width: 480px) {
+    .player-body {
+        height: auto; /* Adjust height automatically */
+        margin: 5% 0%; /* Increase margin for better spacing */
+    }
+
+    .player-left-body,
+    .player-right-body {
+        width: 100%; /* Full width for smaller screens */
+        margin: 0; /* Remove margin for better space utilization */
+    }
+
+    .song-title {
+        font-size: 28px; /* Further reduce font size for smaller screens */
+    }
+
+    .song-artist {
+        font-size: 12px; /* Adjust font size for the artist */
+    }
+
+    .player-right-bottom {
+        margin-top: 20px; /* Add spacing between sections */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}

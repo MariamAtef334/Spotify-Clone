@@ -1,0 +1,102 @@
+.entry-body {
+    width: 100%;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .entry-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  
+  .entry-right-body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .entry-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c9d0e3;
+    margin: 0px 0px 5px;
+  }
+  
+  .entry-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: #c4d0e37c;
+    margin: 0;
+  }
+  .entry-body {
+    width: 100%;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .entry-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  
+  .entry-right-body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .entry-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c9d0e3;
+    margin: 0px 0px 5px;
+  }
+  
+  .entry-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: #c4d0e37c;
+    margin: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .entry-body {
+      margin-top: 8%;
+    }
+  
+    .entry-image {
+      height: 40px;
+      width: 40px;
+      margin-right: 8px;
+    }
+  
+    .entry-title {
+      font-size: 14px;
+    }
+  
+    .entry-subtitle {
+      font-size: 11px;
+    }
+  }
+  
+  /* Media query for screens up to 480px */
+  @media screen and (max-width: 480px) {
+    .entry-body {
+      margin-top: 6%;
+    }
+  
+    .entry-image {
+      height: 30px;
+      width: 30px;
+      margin-right: 6px;
+    }
+  
+    .entry-title {
+      font-size: 12px;
+    }
+  
+    .entry-subtitle {
+      font-size: 10px;
+    }
+  }

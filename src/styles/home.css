@@ -1,0 +1,16 @@
+.main-body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E99D72;
+    border-radius: 30px;
+    display: flex;
+}
+
+  /* Adjust styles for smaller screens */
+  @media (max-width: 480px) {
+    .main-body {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
